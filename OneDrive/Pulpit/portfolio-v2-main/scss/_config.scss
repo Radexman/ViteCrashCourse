@@ -1,0 +1,83 @@
+// SASS variables for typography, colors and other styling
+// Mixin reusable components for buttons, utility classes
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600&display=swap');
+
+// ===== Typography ===== //
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: 'Roboto Slab', serif;
+$font-size: clamp(1.08rem, 2vw, 1.5rem);
+$letter-spacing: 0.1em;
+$line-height: 1.4;
+
+// ======= Colors ====== //
+$clr-brand: #ff9900;
+$clr-primary: #ffffff;
+$clr-secondary: #0d0d0d;
+$clr-transparent: #0d0d0d20;
+$clr-text: #262626;
+$clr-text-dark: #000000;
+
+// ===== Transition ===== //
+$transition: 0.3s ease;
+$transition-long: 0.8s ease-out;
+$slide: translateX(3px);
+
+// ======= Border ======= //
+$border-radius-small: 5px;
+$border-radius-big: 10px;
+
+// ===== Box Shadow ===== //
+
+$box-shadow-bottom: 0 7px 10px $clr-text;
+
+// ====== Button ======= //
+@mixin btn {
+	text-decoration: none;
+	padding-block: 0.3em;
+	width: 100%;
+	border: 2px solid $clr-secondary;
+	text-align: center;
+	border-radius: $border-radius-small;
+	color: $clr-secondary;
+	appearance: none;
+	background: {
+		image: linear-gradient(45deg, $clr-brand 50%, transparent 50%);
+		position: 100%;
+		size: 400%;
+	}
+	transition: $transition-long;
+}
+
+//  ===== Cite ===== //
+@mixin citeUp {
+	content: '❝';
+	font-size: 5rem;
+	color: $clr-text;
+	position: absolute;
+	top: -100px;
+	left: 0px;
+}
+
+@mixin citeDown {
+	content: '❞';
+	font-size: 5rem;
+	color: $clr-text;
+	position: absolute;
+	bottom: -80px;
+	right: 10px;
+}
+
+// ===== Utilities ===== //
+.offscreen {
+	margin: -10000px;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.brand-text {
+	color: $clr-brand;
+}

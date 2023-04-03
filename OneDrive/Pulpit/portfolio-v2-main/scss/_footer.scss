@@ -1,0 +1,36 @@
+.footer {
+    min-height: 20vh;
+    background-color: $clr-brand;
+    color: $clr-text-dark;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &__p {
+        font-size: .8rem;
+    }
+
+    &__social {
+        font-size: 2rem;
+
+        a {
+            color: $clr-text-dark;
+            transition: $transition;
+
+            .fa-file-invoice {
+                font-size: 1.85rem;
+                margin-bottom: 3px;
+            }
+
+            &:hover {
+                color: $clr-primary;
+            }
+        }
+    }
+
+    &__legal {
+        font-size: .7rem;
+    }
+}

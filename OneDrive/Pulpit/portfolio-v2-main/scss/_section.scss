@@ -1,0 +1,174 @@
+// Main projects section
+
+.gray-bg {
+	background-color: $clr-transparent;
+}
+
+.white-bg {
+	margin-top: 3em;
+}
+
+.main__section {
+	min-height: 130vh;
+	padding: 4em 10em;
+	position: relative;
+	text-align: justify;
+
+	.section__h2 {
+		margin-bottom: 0.7em;
+	}
+
+	.section__quote {
+		font-family: $font-secondary;
+		color: $clr-secondary;
+		font-size: 1.9rem;
+		text-align: center;
+		margin-block: 2em;
+		position: relative;
+		letter-spacing: 1px;
+
+		.quote__q::before {
+			@include citeUp;
+		}
+
+		.quote__q::after {
+			@include citeDown;
+		}
+	}
+
+	// Background decorative circles
+
+	.circle1 {
+		font-size: 70em;
+		width: 0.5em;
+		box-sizing: content-box;
+		height: 0.5em;
+		border: 55px solid hsla(36, 100%, 50%, 0.5);
+		position: absolute;
+		left: -400px;
+		z-index: -1;
+		top: 800px;
+		border-radius: 0.35em;
+	}
+
+	.circle-top {
+		top: 200px;
+	}
+
+	.circle2 {
+		font-size: 20em;
+		width: 0.3em;
+		box-sizing: content-box;
+		height: 0.3em;
+		border: 20px solid hsl(0, 0%, 5%, 0.5);
+		position: fixed;
+		right: -100px;
+		z-index: -2;
+		top: 1.2em;
+		border-radius: 0.35em;
+	}
+
+	.circle3 {
+		font-size: 30em;
+		width: 0.35em;
+		box-sizing: content-box;
+		height: 0.35em;
+		border: 15px solid hsl(0, 0%, 5%, 0.75);
+		position: absolute;
+		left: -165px;
+		z-index: -1;
+		top: 10px;
+		border-radius: 0.35em;
+	}
+
+	.boxes__wrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2em;
+		place-content: center;
+	}
+
+	.section__box {
+		text-align: justify;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-flow: column nowrap;
+		gap: 0.4em;
+		margin: 3.5em auto 0 auto;
+
+		.box__h3 {
+			text-align: center;
+			background-color: $clr-secondary;
+			color: #fff;
+			padding: 0.3em;
+			border-radius: $border-radius-small;
+			font-size: 0.9rem;
+			font-weight: 300;
+			width: 100%;
+		}
+
+		.box__img {
+			width: 100%;
+			border: 1px solid $clr-secondary;
+			border-radius: $border-radius-small;
+		}
+
+		.primary-btn {
+			@include btn;
+		}
+
+		.primary-btn:hover {
+			background-position: 0;
+			color: $clr-primary;
+			font-weight: 600;
+		}
+	}
+
+	.section__article {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5em;
+		margin-block: 3.5em;
+
+		.article-icon {
+			font-size: 2.5rem;
+		}
+	}
+}
+
+// Curvy wave at the bottom of section
+
+.bottom-curve {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.bottom-curve svg {
+	position: relative;
+	display: block;
+	width: calc(159% + 1.3px);
+	height: 149px;
+	transform: rotateY(180deg);
+}
+
+.bottom-curve .shape-fill {
+	fill: $clr-transparent;
+}
+
+// Madia querry for mobile design
+
+@media screen and (max-width: 576px) {
+	.main__section {
+		padding-inline: 3em;
+
+		.section__h2 {
+			text-align: center;
+		}
+	}
+}

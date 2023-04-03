@@ -1,0 +1,45 @@
+// Base styling and resets
+// Imported SASS partials
+
+@import './config';
+@import './navbar';
+@import './header';
+@import './section';
+@import './address';
+@import './footer';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+    font-size: $font-size;
+}
+
+img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+body {
+    background-color: $clr-primary;
+    color: $clr-secondary;
+    font-family: $font-primary;
+    overflow-x: hidden;
+}
+
+h1, h3, h4 {
+    font-family: $font-primary;
+}
+
+h2 {
+    color: $clr-brand;
+    font-family: $font-secondary;
+}

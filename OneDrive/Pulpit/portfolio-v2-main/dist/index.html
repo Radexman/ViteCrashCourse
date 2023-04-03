@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Radosław Siek">
+    <meta name="description" content="Hello! My name is Radek and I'm front-end developer.">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6033bf0207.js" crossorigin="anonymous"></script>
+    <script src="./app.js" async></script>
+    <title>Radosław Siek | Portfolio</title>
+</head>
+<body>
+
+    <header class="header">
+
+        <nav class="header__nav">
+            <a href="#" class="header__nav-brand">Radosław Siek</a>
+            
+            <ul class="nav__menu">
+                <li class="menu__item">
+                    <a href="#projects" class="item__link">Projects</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#about" class="item__link">About</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#contact" class="item__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__hamburger">
+            <span class="header__hamburger__bar"></span>
+            <span class="header__hamburger__bar"></span>
+            <span class="header__hamburger__bar"></span>
+        </div>
+
+        <h1 class="header__h1">
+            <span class="nowrap">Hello!</span><br>
+            <span class="nowrap">My name is <span class="brand-text">Radek</span><br>
+            and I'm <span class="brand-text">front-end<br>
+            developer.</span>
+        </h1>
+
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-arrow-right"></i>
+        <i class="fa-solid fa-laptop-code"></i>
+
+        <div class="header__social">
+            <a href="https://www.linkedin.com/in/rados%C5%82aw-siek-320b66209/" target="_blank"><i class="fa-brands social__icon fa-linkedin"></i></a>
+            <a href="https://github.com/Radexman" target="_blank"><i class="fa-brands social__icon fa-square-github"></i></a>
+            <a href="https://www.facebook.com/radek.siek.7" target="_blank"><i class="fa-brands social__icon fa-square-facebook"></i></a>
+            <a href="./Radosław Siek CV.pdf" download><i class="fa-solid social__icon fa-file-invoice"></i></a>
+        </div>
+
+        <img src="./images/hero.png" alt="young handsome man with brown hair and beard" id="hero__img">
+    </header>
+
+    <main class="main">
+        <section class="main__section gray-bg">
+
+            <h2 class="section__h2" id="projects">My Realisations</h2>
+            <p class="section__p">
+                Every project that I develop starts with an idea, no matter if it is a personal
+                or commercial website. I pay a lot of attention to aesthetics, so I spend a lot
+                of time choosing the right typography and color palette. The next step is to
+                wireframe the site in Figma, tweak and change the layout to look great both on
+                desktop and mobile. In fact, I always start by mocking up mobile design. After
+                showing high fidelity wireframe to the client and getting approval that everything
+                is good I start coding and building project functionalities. The projects listed
+                below are among my best.
+            </p>
+
+            <div class="boxes__wrapper">
+                <div class="section__box">
+                    <h3 class="box__h3">Emilia Kożuch Portfolio</h3>
+                    <img src="./images/ekportfolio.png" alt="Elegant portfolio page" class="box__img" width="400" height="200" loading="lazy">
+                    <p class="box__p">
+                        Personal portfolio of Mrs. Emilia Kożuch, a professional English teacher
+                        conducting online classes. The site was built with aesthetics and
+                        clear design. The RWD, SASS and BEM methodology was used to build this project.
+                    </p>
+                    <a href="http://emiliakozuch.pl/" target="_blank" class="primary-btn">Site</a>
+                    <a href="https://github.com/Radexman/emilia-kozuch-portfolio" target="_blank" class="primary-btn">Code</a>
+                </div>
+
+                <div class="section__box">
+                    <h3 class="box__h3">Angielszczyzna</h3>
+                    <img src="./images/angielszczyzna.png" alt="Language shool landing page" class="box__img" width="400" height="200" loading="lazy">
+                    <p class="box__p">
+                        This site was built for an online English school that offers free courses on
+                        various social media and streaming platforms. This webpage has an introductory
+                        video with subtitles in two languages. 
+                    </p>
+                    <a href="https://angielszczyzna.netlify.app/" target="_blank" class="primary-btn">Site</a>
+                    <a href="https://github.com/Radexman/Angielszczyzna" target="_blank" class="primary-btn">Code</a>
+                </div>
+
+                <div class="section__box">
+                    <h3 class="box__h3">Hardcore Gym</h3>
+                    <img src="./images/hardcoregym.png" alt="Hardcore Gym's landing page" class="box__img" width="400" height="200" loading="lazy">
+                    <p class="box__p">
+                        This fictitious gym website is a showcase for a company, it includes training plans
+                        and a fitness form. The page contains contact details, prices for specific
+                        products, and an iframe map that can be clicked and.
+                    </p>
+                    <a href="https://hardcoregym001.netlify.app/" target="_blank" class="primary-btn">Site</a>
+                    <a href="https://github.com/Radexman/hardcore-gym" target="_blank" class="primary-btn">Code</a>
+                </div>
+
+                <div class="section__box">
+                    <h3 class="box__h3">Przepissy</h3>
+                    <img src="./images/przepissy.png" alt="Cook guide landing page" class="box__img" width="400" height="200" loading="lazy">
+                    <p class="box__p">
+                        The book with the best recipes online, contains different categories of
+                        dishes and detailed instructions on how to make them. Each recipe has a
+                        specific cooking time and number of servings.
+                    </p>
+                    <a href="https://przepisssy.netlify.app/" target="_blank" class="primary-btn">Site</a>
+                    <a href="https://github.com/Radexman/Przepissy/tree/main/Przepissy/starter" target="_blank" class="primary-btn">Code</a>
+                </div>
+
+                <div class="section__box">
+                    <h3 class="box__h3">Wiedźmin</h3>
+                    <img src="./images/witcher.png" alt="Game menu layout" class="box__img" width="400" height="200" loading="lazy">
+                    <p class="box__p">
+                        This project is special for me because it concerns my beloved universe.
+                        This app helps you to play The Witcher RPG. Here you can roll dice, fight
+                        with a sword and view your character's stats.
+                    </p>
+                    <a href="https://witcherwip11.netlify.app/" target="_blank" class="primary-btn">Site</a>
+                    <a href="https://github.com/Radexman/Witcher/tree/main/Wied%C5%BAmin%20Gra%20Fabularna" target="_blank" class="primary-btn">Code</a>
+                </div>
+            </div>
+
+            <div class="circle1"></div>
+
+            <div class="circle3"></div>
+
+            <div class="circle2"></div>
+
+        </section>
+        <div class="bottom-curve">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <section class="main__section white-bg">
+            <h2 class="section__h2" id="about">About me</h2>
+            <p class="section__p">
+                I am a young ambitious man who is not afraid of new challenges. Most of my free
+                time is spent on programming and learning. I typically spend several hours
+                daily developing my skills because I beleve that consistency and routine are key
+                factors to any succes that one can achieve in a life.
+            </p>
+
+            <p class="section__quote">
+                <q class="quote__q">There are no shortcuts to any place worth going</q>
+            </p>
+
+            <article class="section__article">
+                <i class="fa-regular fa-keyboard article-icon"></i>
+                <h3>Programmer</h3>
+                <p>
+                    In my frontend journey, I learned how important it is to write clean and semantic
+                    HTML code focused on accessibility,  it is something that is sometimes overlooked.
+                    I know all of the modern CSS layout techniques and when to apply them, I pay much
+                    attention to typography and visual hierarchy of the content on the page. I know color
+                    theory and the concept of good UI design. In all my current projects I use SASS to
+                    split big CSS files into partials and I utilize neat code indentation using SCSS.
+                    When it comes to JavaScript I use ES6 features but also I have an understanding of
+                    previous versions to be able to work with the legacy code. I know a bit of JQuery
+                    and I can freely traverse through the DOM and preform various tasks using Document
+                    Object Model. Currently, I am diving deeper into asynchronous JS and soon I will
+                    jump to React.
+                </p>
+            </article>
+
+            <article class="section__article">
+                <i class="fa-solid fa-book-open article-icon"></i>
+                <h3>Student</h3>
+                <p>
+                    I am currently studying English Philology Practical Profile which combines soft
+                    communication skills, business, and computer science. I have experience working with clients,
+                    how to communicate effectively in multi national teams and how to manage big projects.
+                    I have experience with ERP systems like Microsoft Dynamics and with writing
+                    corporate correspondance. 
+                </p>
+            </article>
+
+            <article class="section__article">
+                <i class="fa-sharp fa-solid fa-guitar article-icon"></i>
+                <h3>Guitarist</h3>
+                <p>
+                    Outside of my studies, I play the electric guitar and I love heavier music. Often after a
+                    hard and tiring day I plug my guitar into an amp and let the stress away. Music has been
+                    my passion and theraphy for almost a decade. The biggest disadvantage of life is that
+                    it doesn’t have a soundtrack!
+                </p>
+            </article>
+            <div class="circle1 circle-top"></div>
+
+        </section>
+
+        <address class="main__address">
+            <div class="top-curve">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+
+            <h2 class="address__h2" id="contact">Contact</h2>
+
+            <p class="address__p">
+                If you are interested in collaboration or you have
+                any questions please don't hesitate to ask!
+                Write an email or message me on my social media.
+            </p>
+
+            <p class="address__p">
+                Email: <a href="mailto:radoslaw.siek-web.dev@wp.pl" class="address__a">radosław-siek.web-dev.wp.pl</a>
+            </p>
+        </address>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__p">
+            Visit me on my social media and check out my CV.
+        </p>
+
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/rados%C5%82aw-siek-320b66209/" target="_blank"><i class="fa-brands social__icon fa-linkedin"></i></a>
+            <a href="https://github.com/Radexman" target="_blank"><i class="fa-brands social__icon fa-square-github"></i></a>
+            <a href="https://www.facebook.com/radek.siek.7" target="_blank"><i class="fa-brands social__icon fa-square-facebook"></i></a>
+            <a href="./Radosław Siek CV.pdf" download><i class="fa-solid social__icon fa-file-invoice"></i></a>
+        </div>
+
+        <p class="footer__p footer__legal">
+            Portfolio designed and build by Radosław Siek &copy; 2023.
+        </p>
+    </footer>
+
+</body>
+</html>

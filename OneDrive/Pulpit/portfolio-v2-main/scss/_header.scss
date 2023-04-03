@@ -1,0 +1,138 @@
+// Hero section, profile image and icons
+
+.header {
+	min-height: 100vh;
+	padding: 0.2em 2em 0 2em;
+
+	#hero__img {
+		width: 50%;
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		z-index: -1;
+	}
+
+	&__h1 {
+		text-align: left;
+	}
+
+	.fa-solid {
+		font-size: 2.4rem;
+		margin-top: 0.3em;
+	}
+
+	.fa-heart:hover {
+		animation-name: hearth;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+	}
+
+	.fa-arrow-right:hover {
+		animation-name: slide;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+	}
+
+	.fa-laptop-code:hover {
+		animation-name: rotate;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+	}
+
+	.header__social {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: space-evenly;
+		position: absolute;
+		bottom: 5px;
+
+		a {
+			color: $clr-secondary;
+			transition: $transition;
+		}
+
+		a:hover {
+			color: $clr-brand;
+			transform: $slide;
+		}
+
+		.social__icon {
+			font-size: 1.5rem;
+		}
+
+		.fa-file-invoice {
+			font-size: 1.7rem;
+			margin-top: 3px;
+		}
+	}
+}
+
+// Animations for the header icons
+
+@keyframes hearth {
+	0% {
+		transform: scale(100%);
+		color: #ff0000;
+	}
+
+	50% {
+		transform: scale(110%);
+		color: $clr-brand;
+	}
+
+	100% {
+		transform: scale(100%);
+	}
+}
+
+@keyframes slide {
+	0% {
+		transform: translateX(0);
+		color: #ff0000;
+	}
+
+	50% {
+		transform: translateX(-4px);
+		color: $clr-brand;
+	}
+
+	100% {
+		transform: translateX(4px);
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+		color: #ff0000;
+	}
+
+	50% {
+		transform: rotate(-7deg);
+		color: $clr-brand;
+	}
+
+	100% {
+		transform: rotate(7deg);
+	}
+}
+
+// This media querry makes bg image responsive
+
+@media screen and (max-width: 992px) {
+	.header {
+		#hero__img {
+			width: 70%;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.header {
+		#hero__img {
+			height: 50vh;
+			width: 85%;
+		}
+	}
+}

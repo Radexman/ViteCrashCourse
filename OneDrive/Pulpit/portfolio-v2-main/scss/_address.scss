@@ -1,0 +1,51 @@
+.main__address {
+    min-height: 30vh;
+    padding: 4em 10em;
+    background-color: $clr-transparent;
+    position: relative;
+    font-style: normal;
+    text-align: justify;
+
+    .top-curve {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .top-curve svg {
+        position: relative;
+        display: block;
+        width: calc(129% + 1.3px);
+        height: 86px;
+    }
+    
+    .top-curve .shape-fill {
+        fill: $clr-primary;
+    }
+
+    .address__h2 {
+        margin-bottom: .7em;
+    }
+
+    .address__p {
+        margin-block: .8em;
+    }
+
+    .address__a {
+        text-decoration: none;
+        color: inherit;
+        transition: $transition;
+
+        &:hover,
+        &:focus {
+            color: $clr-brand;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        padding-inline: 3em;
+    }
+}
