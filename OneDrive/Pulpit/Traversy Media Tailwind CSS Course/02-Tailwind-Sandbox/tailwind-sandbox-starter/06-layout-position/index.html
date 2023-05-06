@@ -1,37 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>TailwindCSS</title>
-  </head>
-  <body>
-    <!-- Positioning -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>TailwindCSS</title>
+	</head>
+	<body>
+		<!-- Positioning -->
+		<div class="relative w-1/2 h-12 bg-red-200">
+			<p>Parent Element</p>
+			<div class="absolute bottom-0 right-0 bg-red-500">
+				<p>Absolute Child</p>
+			</div>
+		</div>
 
-    <!-- Top left corner -->
+		<!-- Top left corner -->
+		<div class="space-y-0.5">
+			<div class="relative h-32 w-32 bg-yellow-300 border border-black">
+				<div class="absolute top-0 left-0 bg-red-500 h-16 w-16"></div>
+			</div>
 
-    <!-- Top right corner -->
+			<!-- Top right corner -->
+			<div class="relative w-32 h-32 bg-yellow-300 border border-black">
+				<div class="absolute w-16 h-16 bg-red-500 top-0 right-0"></div>
+			</div>
 
-    <!-- Bottom left corner -->
+			<!-- Bottom left corner -->
+			<div class="relative h-32 w-32 bg-yellow-300 border border-black">
+				<div class="absolute h-16 w-16 bg-red-500 bottom-0 left-0"></div>
+			</div>
 
-    <!-- Bottom right corner -->
+			<!-- Bottom right corner -->
+			<div class="relative h-32 w-32 bg-yellow-300 border border-black">
+				<div class="absolute h-16 w-16 bg-red-500 bottom-0 right-0"></div>
+			</div>
 
-    <!-- Span top edge -->
+			<!-- Span top edge -->
+			<div class="relative h-32 w-32 bg-yellow-300 border border-black">
+				<div class="absolute inset-x-0 top-0 h-16 bg-red-500"></div>
+			</div>
 
-    <!-- Span left edge -->
+			<!-- Span left edge -->
+			<div class="relative h-32 w-32 bg-yellow-300 border border-black">
+				<div class="absolute inset-y-0 left-0 w-16 bg-red-500"></div>
+			</div>
 
-    <!-- Span right edge -->
+			<!-- Span right edge -->
+			<div class="relative h-32 w-32 bg-yellow-300 border border-black">
+				<div class="absolute inset-y-0 right-0 w-16 bg-red-500"></div>
+			</div>
 
-    <!-- Span bottom edge -->
+			<!-- Span bottom edge -->
+			<div class="relative h-32 w-32 border border-black bg-yellow-300">
+				<div class="absolute h-16 inset-x-0 bottom-0 bg-red-500"></div>
+			</div>
+		</div>
 
-    <!-- Display Classes -->
+		<!-- Display Classes -->
+		<div>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, beatae quo accusantium ipsam quis reprehenderit aperiam! Animi iusto
+			<span class="font-extrabold inline">This is inline</span> perferendis ducimus error excepturi iste, corporis commodi reprehenderit odio
+			tenetur fuga, ipsum aut, minima eum similique unde <span class="font-extrabold inline-block">This is inline block</span> laborum veniam
+			adipisci. <span class="font-extrabold block">This is block</span> Excepturi eligendi reiciendis nisi ab amet illum a recusandae eius
+			consectetur ullam aperiam eveniet quisquam fuga <span class="font-extrabold hidden">This is hidden</span> laudantium illo, obcaecati
+			repellendus voluptates officiis.
+		</div>
 
-    <!-- Z-Index -->
+		<!-- Z-Index -->
+		<div class="relative h-36">
+			<div class="py-7 text-center absolute left-5 w-24 h-24 bg-blue-200 z-40">1</div>
+			<div class="py-7 text-center absolute left-20 w-24 h-24 bg-blue-300">2</div>
+			<div class="py-7 text-center absolute left-40 w-24 h-24 bg-blue-400 z-10">3</div>
+			<div class="py-7 text-center absolute left-60 w-24 h-24 bg-blue-500 z-20">4</div>
+			<div class="py-7 text-center absolute left-80 w-24 h-24 bg-blue-600 z-30">5</div>
+		</div>
 
-    <!-- Floats -->
-  </body>
+		<!-- Floats -->
+		<div class="w-1/2">
+			<img class="h-52 w-52 float-right ml-4" src="../assets/img/img1.jpg" alt="" />
+			<p class="text-justify my-2">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum magni omnis, non sapiente eaque voluptas a quidem unde minima quis,
+				neque hic quaerat! Quae numquam ullam saepe maxime eum magnam!
+			</p>
+		</div>
+	</body>
 </html>
 
 <!-- Position Classes
