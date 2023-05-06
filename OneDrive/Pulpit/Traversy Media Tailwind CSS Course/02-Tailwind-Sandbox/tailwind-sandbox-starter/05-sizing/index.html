@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Sizing</title>
-  </head>
-  <body>
-    <!-- Width -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Sizing</title>
+	</head>
+	<body>
+		<!-- Width -->
+		<div class="bg-black text-white w-4">Hello</div>
+		<div class="bg-black text-white w-48">Hello</div>
+		<div class="bg-black text-white w-96">Hello</div>
 
-    <!-- Percentages -->
+		<!-- Percentages -->
+		<div class="bg-[#333] text-white w-1/4">Hello</div>
+		<div class="bg-[#333] text-white w-1/3">Hello</div>
+		<div class="bg-[#333] text-white w-1/2">Hello</div>
 
-    <!-- Width of the viewport -->
+		<!-- Width of the viewport -->
+		<div class="bg-blue-700 text-black w-screen">Hello</div>
 
-    <!-- 100% of container -->
+		<!-- 100% of container -->
+		<div class="bg-blue-300 text-blck w-full">Hello</div>
 
-    <!-- min/max content -->
+		<!-- Arbitrary width -->
+		<div class="bg-blue-500 text-black w-[300px]">Hello</div>
 
-    <!-- Arbitrary width -->
+		<!-- Max Width -->
+		<div class="bg-gray-300 max-w-2xl mx-auto my-6 p-4 text-justify text-lg tracking-wide">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis natus possimus magni omnis dolorum temporibus at, dolore cupiditate
+			obcaecati officia, veniam illo cumque odit aperiam. Natus quod adipisci laborum. Quo.
+		</div>
 
-    <!-- Max Width -->
+		<!-- Height (Most of the same options as widths) -->
+		<div class="flex items-end">
+			<div class="bg-orange-500 w-20 h-24">Hello 1</div>
+			<div class="bg-orange-500 w-20 h-32">Hello 2</div>
+			<div class="bg-orange-500 w-20 h-40">Hello 3</div>
+			<div class="bg-orange-500 w-20 h-48">Hello 4</div>
+			<div class="bg-orange-500 w-20 h-64">Hello 5</div>
+			<div class="bg-orange-500 w-20 h-96">Hello 6</div>
+		</div>
 
-    <!-- Height (Most of the same options as widths) -->
+		<!-- Min Height -->
 
-    <!-- Min Height -->
+		<!-- Max Height -->
 
-    <!-- Max Height -->
-
-    <!-- Full screen height -->
-  </body>
+		<!-- Full screen height -->
+		<div class="bg-blue-300 text-black h-screen">Hello</div>
+	</body>
 </html>
 
 <!-- 
