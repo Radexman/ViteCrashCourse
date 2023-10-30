@@ -10,7 +10,7 @@ Konieczność wprowadzania definicji liczb całkowitych wynikła z odkrycia licz
 
 Z powyższego zapisu jasno wynika, że liczby naturalne stanowią mniejszy zbiór niż ten złożony z liczb całkowitych. Można nawet powiedzieć, że liczby całkowite zawierają wszystkie liczby naturalne (łącznie z zerem) oraz wszelkie ich liczby przeciwne, czyli liczby z ujemną wartością. Z tego też względu mówimy, że zbiór liczb naturalnych wchodzi w skład zbioru liczb całkowitych.
 
-![liczby całkowite](./images/pic-4.png)
+![liczby całkowite](./images/01-pic-4.png)
 
 ## **Co to są liczby naturalne?**
 
@@ -22,19 +22,19 @@ Istnieje kilka sposobów zapisu tego czym są liczby naturalne, ale dla nas najw
 
 **Liczby naturalne - przykładny**
 
-![liczby naturalne](./images/pic-5.png)
+![liczby naturalne](./images/01-pic-5.png)
 
 ## **Co to są liczby rzeczywiste?**
 
 Liczby rzeczywiste są to tak naprawdę wszystkie liczby jakie jesteśmy w stanie sobie wyobrazić, zarówno te wymierne ja i niewymierne. Tym samym zbiór liczb rzeczywistych jest największym zbiorem liczb jaki istnieje w matemayce.
 
-![liczby rzeczywiste](./images/pic-1.png)
+![liczby rzeczywiste](./images/01-pic-1.png)
 
 ## **Co to są liczby wymierne?**
 
 Określenie co jest liczbą wymierną sprawia wielu osobom dość dużo problemów, dlatego wyjaśnijmy sobie wszystkie nieścisłości jakie mogą budzić naszą wątpliwość.
 
-Co do definicji liczba wymierną nazwiemy każdą liczbę, którą da się zapisać w formie ułamka zwykłego w postaci p/q gdzie:
+Co do definicji liczbą wymierną nazwiemy każdą liczbę, którą da się zapisać w formie ułamka zwykłego w postaci p/q gdzie:
 
 -   p - dowolna liczna całkowita
 -   q - dowolna liczba całkowita różna od zera
@@ -43,10 +43,10 @@ Co do definicji liczba wymierną nazwiemy każdą liczbę, którą da się zapis
 
 ### **Liczby wymierne - przykłady:**
 
-![liczby wymierne](./images/pic-2.png)
+![liczby wymierne](./images/01-pic-2.png)
 
 ## **Co to są liczby niewymierne?**
 
 Liczbami niewymiernymi nazywamy wszystkie te liczby, których nie da się zapisać w formie ułamka zwykłego, którego licznik jest liczbą całkowitą, a mianownik jest różny od zera. To oznacza, że jest to przeciwieństwo liczb wymiernych, a co za tym idzie - zbiór liczb niewymiernych i wymiernych nie ma żadnego elementu wspólnego. Połączenie zbioru liczb niewymiernych i wymiernych tworzy zbiór liczb rzeczywistych.
 
-![liczby niewymierne](./images/pic-3.png)
+![liczby niewymierne](./images/01-pic-3.png)
