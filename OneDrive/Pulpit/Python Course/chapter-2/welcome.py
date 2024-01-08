@@ -1,7 +1,8 @@
-line01 = '********************'
-line02 = '*                  *'
-line03 = '*     WELCOME!     *'
+line01 = '********************' # header/footer
+line02 = '*                  *' # Middle section
+line03 = '*     WELCOME!     *' # Central section
 
+# Starts with blank line
 print('')
 print(line01)
 print(line02)
